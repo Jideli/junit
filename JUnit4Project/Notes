@@ -1,0 +1,27 @@
+Annotations
+	@BeforeClass > executed only once
+	@Before > before each test case (if 5 TC, executed 5x)
+	@Test > whatever you want to test, code will be defined here
+	@After > whatever was initalized in @Before will be released here after each TC
+	@AfterClass > objects initalized in @BeforeClass and release once after all TCs
+	@Ignore > do not execute this test
+
+Features of JUnit Testing Framework: Fixtures, Test suites, Test runners, JUnit classes
+Test Fixtures
+Test Suites: @RunWith and @Suite
+Test Runners: class which is used to run TCs as a suite
+
+JUnit classes: Assert, TestCase, TestResult, TestSuite
+Assert: verify expected and actual output
+Assert methods:
+	void assertEquals(boolean expected, boolean actual) // can also be string
+	void assertFalse(boolean condition) // successful if condition is false
+	void assertNotNull(Object object) // OK if value of object is not null
+	void asssertNull(Object object) // OK if value is null
+	void assertTrue(boolean condition) // OK if condition is true
+	void fail() 
+	
+	
+	
+
+
