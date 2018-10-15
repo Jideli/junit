@@ -21,6 +21,36 @@ Assert methods:
 	void assertTrue(boolean condition) // OK if condition is true
 	void fail() 
 	
+TestCase methods: (see class TestCaseClass.java)
+	int countTestCases() // how many executed
+	TestResult createResult() // provide result and write code to create result
+	String getName() // get name of executed TC e.g. 'this.getName();' get name of current file
+	TestResult run() // if more than 1 TC, how many passed how many failed
+	void run(TestResult result) // provide result
+	void setName(String name) // rename TC
+	void setUp() // initalizing object for test case
+	void tearDown() 
+	String toString() // print to console or log
+	
+TestResult methods: (see class TestResultClass.java)
+	void addError(Test test, Throwable t) // add errors to bunch of error list
+	void addFailure(Test test, AssertionFailedError t) // errors received for assertion methods
+	void endTest(Test test)
+	int errorCount()
+	Enumeration<TestFailure> errors()
+	int failureCount()
+	int run(TestCase test)
+	int runCount()
+	void startTest(Test test)
+	void stop() // test should be stopped
+	
+
+	
+	
+	
+	
+	
+	
 	
 	
 
