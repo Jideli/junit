@@ -44,7 +44,16 @@ TestResult methods: (see class TestResultClass.java)
 	void startTest(Test test)
 	void stop() // test should be stopped
 	
-
+TestSuite methods: (see class TestSuiteClass.java)
+	void addTest(Test test) // add TC to a test suite
+	void addTestSuite(Class<? extends TestCase testClass> // add extra suite to execute
+	int countTestCases() // how many TC executed
+	String getName() // return test suite name
+	void run(TestResult result) // run test result
+	void setName(String name) // set different name on run time
+	Test testAt(int index) // pass one argument to this method, e.g. test 5 to 8
+	int testCount() // how many test suites have been executed
+	static Test warning(String message) // before test suite execution, display warning about errors that my occur during execution
 	
 	
 	

@@ -13,7 +13,7 @@ public class compareStringsTest {
 		// assertTrue("helo and hello fails",demo.compareString("hello", "hello"));
 		assertFalse("helo and hello fails",demo.compareString("hello", "hello"));
 	}
-	
+
 	
 	// assertEquals(expected, actual) method --> if actual, returns true
 	@Test
